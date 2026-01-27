@@ -9,4 +9,5 @@ console.log(`Sisi b  : ${sisi2}`);
 console.log(`Tinggi  : ${tinggi}`);
 
 console.log(`Rumus   : Luas = ${rumus} * (a + b) * t`);
+console.log("------------- Hasil -----------------");
 hitungLuasTrapesium();
