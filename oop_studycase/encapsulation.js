@@ -24,6 +24,6 @@ class Siswa{
 }
 
 const siswa1 = new Siswa("Nazrul", "10", 90);
-siswa1.nilai = 80
+siswa1.nilai = 80 // tidak dapat diakses secara langsung
 siswa1.setNilai(78)
 console.log(siswa1.getNilai())

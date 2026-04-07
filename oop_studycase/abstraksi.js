@@ -29,6 +29,7 @@ class Dkv extends Siswa{
 const siswaRpl = new Rpl("Nazrul")
 const siswaDkv = new Dkv("Raka")
 const siswaAnim = new Animasi("Kevin")
+const siswa = new Siswa("Siswa")  
 
 siswaRpl.praktik()
 siswaDkv.praktik()
