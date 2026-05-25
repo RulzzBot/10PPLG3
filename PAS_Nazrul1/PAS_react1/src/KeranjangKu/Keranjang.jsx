@@ -4,6 +4,7 @@ import Navigasi from "./Navigasi";
 import ProdukInput from "./InputProduk";
 import Produk from "./Produk";
 import { IoClose } from "react-icons/io5";
+import SideBar from "./SideBar";
 
 class Keranjang extends React.Component {
     constructor(props) {
@@ -50,23 +51,7 @@ class Keranjang extends React.Component {
                 <ProdukInput addProduk={this.onAddProdukHandler} />
                 {
                     this.state.showCart && (
-                        <div className="cart-container">
-                            <div className="nav-mini">
-                                <IoClose className="close-icon" onClick={this.toggleCart} size={30}/>
-                                <h2>Keranjang Belanja</h2>
-                            </div>
-                            {
-                            this.state.products.map((item) => (
-                            <Produk
-                                key={item.id}
-                                id={item.id}
-                                nama={item.nama}
-                                harga={item.harga}
-                                urlImg={item.urlImg}
-                                onDelete={this.onDeleteProdukHandler}/>
-                            ))
-                }
-                        </div>
+                        <SideBar products={this.state.products} onDelete={this.onDeleteProdukHandler} toggleCart={this.toggleCart} />
                     )
                 }
                 

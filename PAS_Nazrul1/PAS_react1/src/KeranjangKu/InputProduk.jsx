@@ -1,6 +1,6 @@
 import React from "react";
 import { IoAdd } from "react-icons/io5";
-import bg from "../assets/bg.png";
+import Bg from "./Bg"; 
 
 class ProdukInput extends React.Component {
     constructor(props) {
@@ -63,7 +63,7 @@ class ProdukInput extends React.Component {
     render() {
         return(
             <div className="container">
-                <img src={bg} alt="" className="bg-img"/>
+                <Bg/>
                 <div className="overlay"></div>
                 <div className="hero-se">
                     <h1>Belanja Mudah,</h1>
